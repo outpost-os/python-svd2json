@@ -9,35 +9,20 @@ on:
     types: [released]
 
 jobs:
-  deploy:
+  pypi-publish:
+    name: Upload release to PyPI
     runs-on: ubuntu-latest
-    environment: release
-
+    environment:
+      name: release
+      url: https://pypi.org/p/svd2json
     permissions:
       id-token: write
-      contents: read
-
     steps:
-      - uses: actions/checkout@v4
+    # retrieve your distributions here
 
-      - name: Set up Python 3.10
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      - name: Install twine
-        run: |
-          pip install twine build
-
-      - name: Mint token
-        id: mint
-        uses: tschm/token-mint-action@v1.0.3
-
-      - name: Build n check python package
-        run: |
-          python -m build
-          twine check dist/*.whl
-
-      - name: Publish package to registry
-        run: |
-          twine upload --disable-progress-bar -u __token__ -p '${{ steps.mint.outputs.api-token }}' dist
+    - name: Publish package distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        verify-metadata: true
+        skip-existing: true
+        print-hash: true
