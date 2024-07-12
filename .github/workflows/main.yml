@@ -23,6 +23,11 @@ jobs:
       python-version: '3.11'
   lint:
     needs: [ ut, doc ]
+    permissions:
+      security-events: write
+      packages: read
+      actions: read
+      contents: read
     if: ${{ github.event_name == 'pull_request' }}
     uses: outpost-os/pipeline-python/.github/workflows/lint.yml@v1
     with:
