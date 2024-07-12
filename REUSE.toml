@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2024 Ledger SAS
+#
+# SPDX-License-Identifier: Apache-2.0
+
+version = 1
+SPDX-PackageName = "svd2json"
+SPDX-PackageSupplier = "Ledger SAS <firmware@ledger.fr>"
+SPDX-PackageDownloadLocation = "https://github.com/outpost-os/python-svd2json"
+
+[[annotations]]
+path = "doc/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Ledger SAS"
+SPDX-License-Identifier = "Apache-2.0"
