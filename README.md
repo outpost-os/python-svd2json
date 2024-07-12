@@ -9,6 +9,7 @@ SPDX-License-Identifier: Apache-2.0
 ![PyPI - License](https://img.shields.io/pypi/l/svd2json)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/svd2json)
 
+[![codecov](https://codecov.io/gh/outpost-os/python-svd2json/graph/badge.svg?token=H6VZ47MTRN)](https://codecov.io/gh/outpost-os/python-svd2json)
 ![build](https://github.com/outpost-os/python-svd2json/actions/workflows/main.yml/badge.svg)
 
 
