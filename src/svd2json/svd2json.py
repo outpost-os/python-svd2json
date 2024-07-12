@@ -126,6 +126,8 @@ class Svd2Json:
 
     def _peripheral_name_fixup(self) -> None:
         """
+        Peripheral(s) name fixup.
+
         Some SVD may have the peripheral's name as prefix for register's name
         As this is not consistent **AND** there is already such a concatenation
         in peripherals layout template, we can trim this
