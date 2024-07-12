@@ -9,6 +9,7 @@ about: Create a report to help us improve
 title: 'bug: '
 labels: bug
 assignees: pthierry-ledger, fvalette-ledger
+projects: ['outpost-os/1']
 
 ---
 
