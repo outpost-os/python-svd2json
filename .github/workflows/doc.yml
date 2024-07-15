@@ -5,9 +5,14 @@
 name: Python Doc
 
 on:
-  pull_request:
+  push:
     branches:
     - main
+    paths:
+      - 'doc/**'
+      - 'tox.ini'
+      - '.github/workflows/doc.yml'
+  pull_request:
     paths:
       - 'doc/**'
       - 'tox.ini'
