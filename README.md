@@ -10,8 +10,10 @@ SPDX-License-Identifier: Apache-2.0
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/svd2json)
 
 [![codecov](https://codecov.io/gh/outpost-os/python-svd2json/graph/badge.svg?token=H6VZ47MTRN)](https://codecov.io/gh/outpost-os/python-svd2json)
-![build](https://github.com/outpost-os/python-svd2json/actions/workflows/main.yml/badge.svg)
-
+![lint](https://github.com/outpost-os/python-svd2json/actions/workflows/lint.yml/badge.svg)
+![unittest](https://github.com/outpost-os/python-svd2json/actions/workflows/unittest.yml/badge.svg)
+![doc](https://github.com/outpost-os/python-svd2json/actions/workflows/doc.yml/badge.svg)
+![quality](https://github.com/outpost-os/python-svd2json/actions/workflows/quality.yml/badge.svg)
 
 # Python svd2json package
 
