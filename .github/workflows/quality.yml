@@ -5,13 +5,15 @@
 name: Python Code Quality
 
 on:
-  workflow_run:
-    workflows: [Python Unit Tests]
-    types: [completed]
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
 
 jobs:
   codeql:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     permissions:
       security-events: write
       packages: read
